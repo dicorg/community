@@ -23,13 +23,13 @@ defmodule Community.MixProject do
       compilers: Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      description: "A flavour of Bonfire",
-        homepage_url: "https://bonfirenetworks.org/",
-        source_url: "https://github.com/bonfire-networks/community",
+      description: "DIC's flavour of Bonfire community",
+        homepage_url: "https://dicoalition.org/",
+        source_url: "https://github.com/dicorg/community",
         package: [
           licenses: ["AGPL-3.0"],
           links: %{
-            "Repository" => "https://github.com/bonfire-networks/community",
+            "Repository" => "https://github.com/dicorg/community",
             "Hexdocs" => "https://hexdocs.pm/community"
           }
         ],
