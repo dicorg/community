@@ -10,6 +10,16 @@ config :bonfire, :ui,
   smart_input_activities: [
     category: "Create a topic",
     label: "New label"
+  ],
+  theme: [
+    instance_welcome: [
+      links: [
+        "About Bonfire": nil,
+        Forum: nil,
+        "Community Chat": nil,
+        Contribute: nil
+      ]
+    ]
   ]
 
 config :bonfire_social, Bonfire.Social.Pins, modularity: true
