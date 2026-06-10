@@ -10,7 +10,13 @@ defmodule Community.RuntimeConfig do
   def config do
     import Config
 
-    # config :community,
-    #   modularity: System.get_env("ENABLE_community") || :disabled
+    member_links =
+      [
+        Website: "https://digitalintimacycoalition.org",
+        Notion: System.get_env("DIC_MEMBER_NOTION_URL")
+      ]
+      |> Enum.filter(fn {_, url} -> is_binary(url) and url != "" end)
+
+    config :bonfire, :ui, theme: [member_links: member_links]
   end
 end
